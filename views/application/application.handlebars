@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="/assets/css/articles.css"> 
+{{> nav }} 
+{{> articles-added-modal }} 
+<div class="all-articles-container container">
+
+  <div class="row">
+    {{#if articles }} {{#each article}}
+    <div class="articles-container col-xs-12 col-sm-6 col-lg-6">
+      <div class="articles-subcontainer articles-default">
+        <h3 class="lead">
+          {{ this.title }}
+        </h3>
+        <button type="button" class="btn btn-info">Article Notes</button>
+        <button type="button" class="btn btn-danger">Delete From Saved</button>
+        <div class="bottom-articles-container">
+          <p class="description">
+            {{ this.description }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  {{/each}} {{/if}}
+</div>
+</div>
