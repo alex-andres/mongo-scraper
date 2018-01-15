@@ -16,7 +16,7 @@ var savedSchema = mongoose.Schema({
     type: String,
     min: [3, "Please enter an email in the correct format"],
     required: [true]
-  }
+  },
   saved:{
     type: Boolean,
     required: [true]

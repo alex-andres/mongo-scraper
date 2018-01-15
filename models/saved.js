@@ -16,7 +16,7 @@ var savedSchema = mongoose.Schema({
     type: String,
     min: [3, "Please enter an email in the correct format"],
     required: [true, "Please enter an email"]
-  }
+  },
   articleNote:{
     type: String, 
     min: [1],

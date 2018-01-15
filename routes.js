@@ -5,6 +5,6 @@ module.exports = (app)=>{
 		var saved = require('./routes/saved');
 
 		app.use('/', application);
-		app.use('/saved, saved);
+		app.use('/saved', saved);
 		//other routes..
 }
